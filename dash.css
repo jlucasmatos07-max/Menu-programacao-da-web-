@@ -160,7 +160,7 @@ th {
 td {
     padding: 15px;
     border-bottom: 1px solid #300101;
-    font-size; 10px;
+    font-size: 14px;
     color: #dfdfdf;
 
 }
@@ -189,4 +189,74 @@ tbody tr:nth-child(even) {
 
 tbody tr:hover {
     background-color:#fff2;
+}
+
+/*formulario de login*/
+.card-form {
+    background:#300101;
+    max-width: 700px; /*evita q o formulario fique mt largo*/
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px #000000;
+}
+
+.form-header {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #4f4f4f;
+    padding-bottom: 15px;
+    color:#dfdfdf;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /*label em cima input embaixo*/
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-row { /*coloca dois campos lado a lado*/
+    display: flex; 
+    gap: 20px;
+}
+.flex-1 {
+    flex: 1;
+}
+
+label {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #dfdfdf;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+input:focus { border-color: #004cff69; outline: none; box-shadow: 0 0 0 3px #300101; }
+
+.btn-save {
+    background-color:#3c3c3c;
+    color: #ffffff;
+    border: none;
+    padding:12px 25px;
+    border: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-save:hover {
+    background: #222222;
+}
+
+.btn-cancel {
+    color: #dfdfdf;
+}
+
+
+.btn-cancel:hover {
+    color: #c11414;
 }
