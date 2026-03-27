@@ -1,3 +1,4 @@
+<!--main page -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,20 +9,11 @@
     <link rel ="stylesheet" href="dash.css">
 </head>
 <body>
-    <div class="dashboard-container">
-        <nav>
-        <ul>
-            <li><a href="https://www.playstation.com/pt-br/games/bloodborne/">Onde comprar:</a></li>
-            <li><a href="https://youtu.be/KwEWUq41Dck?si=zQZpvntNnok5ILAq">Para mais informações:</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Bloodborne">wikipédia</a></li>
-            <li><a href="usuarios.html">Gerenciamento de usuario</a></li>
-        </ul>
-
-        <div class="perfil-usuario">
-            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Foto de perfil do usuário">
-             <span>lucas</span>
-        </div>
-    </nav>
+    
+     <?php 
+    //barra de navegação lateral
+    include 'sidebar.php'
+     ?> 
  <main>
     <section class ="container-cards">
 
@@ -46,9 +38,7 @@
     </main>
     </div>
 
-    <footer>
-    <p>Copyright © <?php echo date('Y'); ?> BloodBornLoverz. Todos os direitos reservados.(MATOS, LUCAS)</p>
-</footer>
+    <footer>   <?php include 'footer.php' ?>  </footer>
 
     </body>
 

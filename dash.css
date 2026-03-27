@@ -1,3 +1,14 @@
+/*variaveis*/
+:root {
+    --cor-fundo: #300101;
+    --cor-sidebar: #000000;
+    --cor-branco1: #ffffff;
+    --cor-branco2: #dfdfdf;
+}
+
+/*---*/
+
+
 .dashboard-container {
   display: flex;
   align-items: stretch;
@@ -7,13 +18,13 @@
 main {
 flex: 1;
 padding: 30px;
-background-color: #300101;
+background-color: var (var(--cor-fundo))
 
 }
 
 nav {
   width: 200px;
-  background-color: #000000;
+  background-color: var(--cor-sidebar)
   padding: 20px;
 
   display: flex;
@@ -31,7 +42,7 @@ nav ul {
 }
 
 nav a {
-    color: #ffffffff;
+    color: var(--cor-branco1))
     text-decoration: none;
     display: block;
     padding: 10px;
@@ -40,8 +51,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffffff;
-    text-decoration: #ffffff;
+    color: var(--cor-branco1))
+    text-decoration: var(--cor-branco1))
     text-decoration: underline;
 }
 
@@ -49,7 +60,7 @@ nav a:hover {
     display: flex;
     align-items: center; /*centraliza verticalmente nome/avatar */
     gap: 10px; /*espacamento entre avatar e nome*/
-    color: #ffffff;
+    color: var(--cor-branco1))
     padding-top: 20px;
     border-top: 1px solid; /*linha separando perfil do menu*/
 
@@ -82,18 +93,18 @@ article {
 }
 
    article h2 {
-        color: #ffffff;
+        color: var(--cor-branco1))
         margin-bottom: 20px;
     }
 
     article p {
         margin-bottom: 20px;
-        color: #ffffff;
+        color: var(--cor-branco1))
     }
     
 
 body {
-    background-color: #dfdfdf;
+    background-color: var(--cor-branco2))
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -103,7 +114,7 @@ body {
 
  footer {
     background-color:#000000;
-    color:#ffffff;
+    color:var(--cor-branco1)
     padding: 15px;
     text-align: center;
     font-size: 14px;
@@ -119,7 +130,7 @@ body {
     display: inline-block;
     text-align: center;
     background-color: #3c3c3c;
-    color: white;
+    color: var(--cor-branco1))
     padding: 10px;
     text-decoration: none;
     border-radius: 4px;
@@ -149,7 +160,7 @@ table {
 /*cabeçalho*/
 th {
     background-color:#300101;
-    color:#dfdfdf;
+    color: var(--cor-branco2))
     padding: 15px;
     text-align: left;
     font-size: 10px;
@@ -161,16 +172,16 @@ td {
     padding: 15px;
     border-bottom: 1px solid #300101;
     font-size: 14px;
-    color: #dfdfdf;
+    color: var(--cor-branco2))
 
 }
 
 .header-container {
-    color: #dfdfdf;
+    color: var(--cor-branco2))
     padding-left:109px;
 }
  .btn-icon {
-    color: #dfdfdf;
+    color: var(--cor-branco2))
     background: none;
     border: none;
     cursor: pointer;
@@ -205,7 +216,7 @@ tbody tr:hover {
     margin-bottom: 25px;
     border-bottom: 1px solid #4f4f4f;
     padding-bottom: 15px;
-    color:#dfdfdf;
+    color:var(--cor-branco2))
 }
 
 .form-group {
@@ -225,13 +236,13 @@ tbody tr:hover {
 
 label {
     font-weight: bold;
-    color: #ffffff;
+    color: var(--cor-branco1))
     font-size: 14px;
 }
 
 input, select {
     padding: 12px;
-    border: 1px solid #dfdfdf;
+    border: 1px solid var(--cor-branco2))
     border-radius: 6px;
     transition: 0.3s;
 }
@@ -240,7 +251,7 @@ input:focus { border-color: #004cff69; outline: none; box-shadow: 0 0 0 3px #300
 
 .btn-save {
     background-color:#3c3c3c;
-    color: #ffffff;
+    color: var(--cor-branco1))
     border: none;
     padding:12px 25px;
     border: 6px;
@@ -253,7 +264,7 @@ input:focus { border-color: #004cff69; outline: none; box-shadow: 0 0 0 3px #300
 }
 
 .btn-cancel {
-    color: #dfdfdf;
+    color: var(--cor-branco2))
 }
 
 
