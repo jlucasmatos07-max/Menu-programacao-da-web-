@@ -10,7 +10,7 @@
 </head>
 <body>
     <?php
-    include 'sidebar.php'
+    include 'sidebar.php';
     ?>
  <main>
     <section class="card-form">
@@ -19,11 +19,17 @@
             <p>preencha os dados abaixo para registrar um novo acesso</p>
         </div>
 
-        <form action="usuarios.html" method="POST">
+        <form action="user_area.php" method="POST">
             <div class="form-group">
                 <label for="nome">nome completo</label>
                 <input type="text" id="nome" name="nome" placeholder="ex: lucas matos" required>
             </div>
+
+            <div class="form-group">
+                <label for="data">data de nascimento</label>
+                <input type="date" id="data" name="data" placeholder="dd/mm/yyyy" required>
+
+                </div>
 
             <div class="form-group">
                 <label for="email">email</label>
@@ -41,6 +47,16 @@
                         <option value="1">usuario</option>
                         <option value="2">administrador</option>
                     </select>
+
+                    <?php 
+                    $nivelAcesso =2;
+                    if ($nivelAcesso == 2) {
+                        echo '<span class="badge ativo">administrador</span>';
+
+                    } else {
+                        echo '<span class="badge inativo">usúario</span>';
+                    }
+                    ?>
                  </div>
             </div>
             <div class="form-actions">

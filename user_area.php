@@ -12,6 +12,8 @@
     <?php
     include 'sidebar.php'
     ?>
+
+
     <main>
         <div class="header-container">
             <h1>Gerenciamento de usúarios</h1>
@@ -63,7 +65,7 @@
                         <td>duda silva</td>
                         <td>dudasilva2504@example.com</td>
                         <td>usúario</td>
-                        <td><span class= "badge ativo">inativo</span></td>
+                        <td><span class= "badge inativo">inativo</span></td>
                         <td> <a href= "#" class= "btn-acao btn-editar">
                              <i class="fa-solid fa-pen-to-square"></i> </a>
                             <a href= "#" class= "btn-acao btn-excluir"></a>

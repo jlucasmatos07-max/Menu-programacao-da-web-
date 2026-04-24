@@ -12,7 +12,7 @@
     
      <?php 
     //barra de navegação lateral
-    include 'sidebar.php'
+    include 'sidebar.php';
      ?> 
  <main>
     <section class ="container-cards">
@@ -43,6 +43,20 @@
     </body>
 
 
+<script>
 
+    let resposta = prompt ("quantos usuarios deseja cadastrar?");
+    let quantidade = Number(resposta);
+
+    for (let i = 1; 1 <= quantidade, i++) {
+
+    console.log("processando os cadastros de usuario . . " + i + " . . .");
+
+    
+    }
+
+    alert("pronto ! aperte f12 para ver o relatorio completp no console .");
+    
+</script>
 
 </html>
