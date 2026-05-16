@@ -5,9 +5,6 @@
     <div class="dashboard-container">
         <nav>
         <ul>
-            <li><a href="https://www.playstation.com/pt-br/games/bloodborne/">Onde comprar:</a></li>
-            <li><a href="https://youtu.be/KwEWUq41Dck?si=zQZpvntNnok5ILAq">Para mais informações:</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Bloodborne">wikipédia</a></li>
             <li><a href="usuarios.html">Gerenciamento de usuario</a></li>
         </ul>
 
