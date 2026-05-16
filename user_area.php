@@ -82,7 +82,7 @@
 function listarUsuarios(){
 
     let listaUsuarios =
-        JSON.parse(localStorage.getItem("login_users.php")) || [];
+        JSON.parse(localStorage.getItem("login_users")) || [];
 
     let tabela =
         document.getElementById("tabelaUsuarios");
