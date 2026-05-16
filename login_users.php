@@ -80,15 +80,22 @@ function cadastrarUsuario(){
     let email = document.getElementById("email").value;
     let senha = document.getElementById("senha").value;
     let data = document.getElementById("data").value;
-    let nivel = document.getElementById("nivel").value;
+    //let nivel = document.getElementById("nivel").value;
 
     // validação
-    if(nome == "" || email == "" || senha == "" || data == "" || nivel == ""){
+    if(nome == "" || email == "" || senha == "" || data == ""){
 
         alert("Preencha todos os campos");
 
         return;
     }
+
+    const novoUsuario = {nome: inputNome, email: inputEmail, senha: inputSenha, data: inputData};
+    let lista = JSON.parse(localStorage.getItem("bancoUsuarios")) || [];
+    lista.push(novoUsuario);
+    localStorage.setItem("bancoUsuarios", JSON.stringify(lista));
+
+    alert("Usuário cadastrado com sucesso!");
 }
 
     </script>
