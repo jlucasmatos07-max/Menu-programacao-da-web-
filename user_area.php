@@ -56,7 +56,7 @@
                             <a href= "#" class= "btn-acao btn-excluir"></a>
                             <i class= "fa-solid fa-trash"></i></button></td>
                     </tr>
-                                    <thead>
+                        <thead>
                 
                 </thead>
                 <tbody>
@@ -76,11 +76,5 @@
             </table>
 
     </main>
-    
-
-
-    <script>
-        
-    </script>
 </body>
 </html>

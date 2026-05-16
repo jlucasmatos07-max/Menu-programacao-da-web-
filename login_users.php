@@ -51,7 +51,7 @@
                     <?php 
                     $nivelAcesso =2;
                     if ($nivelAcesso == 2) {
-                        echo '<span class="badge ativo">administrador</span>';
+                        echo '<span class="badge ativo"> </span>';
 
                     } else {
                         echo '<span class="badge inativo">usúario</span>';
@@ -78,39 +78,17 @@ function cadastrarUsuario(){
 
     let nome = document.getElementById("nome").value;
     let email = document.getElementById("email").value;
+    let senha = document.getElementById("senha").value;
+    let data = document.getElementById("data").value;
+    let nivel = document.getElementById("nivel").value;
 
     // validação
-    if(nome == "" || email == ""){
+    if(nome == "" || email == "" || senha == "" || data == "" || nivel == ""){
 
         alert("Preencha todos os campos");
 
         return;
     }
-
-    // pega lista salva
-    let listaUsuarios =
-        JSON.parse(localStorage.getItem("db_usuarios")) || [];
-
-    // cria objeto
-    let novoUsuario = {
-        nome: nome,
-        email: email
-    };
-
-    // adiciona usuário
-    listaUsuarios.push(novoUsuario);
-
-    // salva no localStorage
-    localStorage.setItem(
-        "db_usuarios",
-        JSON.stringify(listaUsuarios)
-    );
-
-    alert("Usuário cadastrado com sucesso");
-
-    // limpa campos
-    document.getElementById("nome").value = "";
-    document.getElementById("email").value = "";
 }
 
     </script>
