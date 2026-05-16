@@ -1,90 +1,86 @@
+
+<!--area de gerenciamento de usúario-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>Usuários</title>
+    <meta charset="UTF-8">
+    <title>Gerenciamento de usúarios</title>
+    <link rel ="stylesheet" href="dash.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <?php
+    include 'sidebar.php'
+    ?>
 
-<h1>Usuários</h1>
 
-<table border="1">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Nome</th>
-            <th>Email</th>
-            <th>Ações</th>
-        </tr>
-    </thead>
+    <main>
+        <div class="header-container">
+            <h1>Gerenciamento de usúarios</h1>
+            <p>gerencie as configurações do usuário</p>
+        </div>
 
-    <tbody id="tabela"></tbody>
-</table>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>nome</th>
+                        <th>e-mail</th>
+                        <th>acesso</th>
+                        <th>status</th>
+                        <th>ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>lucas matos</td>
+                        <td>lucasmatos2727@example.com</td>
+                        <td>administrador</td>
+                        <td><span class= "badge ativo">ativo</span></td>
+                        <td> <a href= "#" class= "btn-acao btn-editar">
+                             <i class="fa-solid fa-pen-to-square"></i> </a>
+                            <a href= "#" class= "btn-acao btn-excluir"></a>
+                            <i class= "fa-solid fa-trash"></i></button></td>
 
-<br>
-<a href="cadastro.html">Cadastrar novo</a>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>kwjgrhfjkm,se</td>
+                        <td>kwjgrhfjkm,se@example.com</td>
+                        <td>editor</td>
+                        <td><span class= "badge ativo">ativo</span></td>
+                        <td> <a href= "#" class= "btn-acao btn-editar">
+                             <i class="fa-solid fa-pen-to-square"></i> </a>
+                            <a href= "#" class= "btn-acao btn-excluir"></a>
+                            <i class= "fa-solid fa-trash"></i></button></td>
+                    </tr>
+                                    <thead>
+                
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>03</td>
+                        <td>duda silva</td>
+                        <td>dudasilva2504@example.com</td>
+                        <td>usúario</td>
+                        <td><span class= "badge inativo">inativo</span></td>
+                        <td> <a href= "#" class= "btn-acao btn-editar">
+                             <i class="fa-solid fa-pen-to-square"></i> </a>
+                            <a href= "#" class= "btn-acao btn-excluir"></a>
+                            <i class= "fa-solid fa-trash"></i></button></td>
 
-<script>
+                    </tr>
+                </tbody>
+            </table>
 
-function listar(){
+    </main>
+    
 
-    let usuarios =
-        JSON.parse(localStorage.getItem("db_usuarios")) || [];
 
-    let tabela = document.getElementById("tabela");
-
-    tabela.innerHTML = "";
-
-    usuarios.forEach((u, i) => {
-
-        tabela.innerHTML += `
-            <tr>
-                <td>${i+1}</td>
-                <td>${u.nome}</td>
-                <td>${u.email}</td>
-
-                <td>
-                    <button onclick="editar(${i})">Editar</button>
-                    <button onclick="deletar(${i})">Excluir</button>
-                </td>
-            </tr>
-        `;
-    });
-}
-
-function editar(i){
-
-    let usuarios =
-        JSON.parse(localStorage.getItem("db_usuarios"));
-
-    let nome = prompt("Novo nome", usuarios[i].nome);
-    let email = prompt("Novo email", usuarios[i].email);
-
-    if(nome == "" || email == "") return;
-
-    usuarios[i].nome = nome;
-    usuarios[i].email = email;
-
-    localStorage.setItem("db_usuarios", JSON.stringify(usuarios));
-
-    listar();
-}
-
-function deletar(i){
-
-    let usuarios =
-        JSON.parse(localStorage.getItem("db_usuarios"));
-
-    usuarios.splice(i, 1);
-
-    localStorage.setItem("db_usuarios", JSON.stringify(usuarios));
-
-    listar();
-}
-
-listar();
-
-</script>
-
+    <script>
+        
+    </script>
 </body>
 </html>
