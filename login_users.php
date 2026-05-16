@@ -70,7 +70,7 @@
 <button onclick="cadastrar()">Salvar</button>
 
 <br><br>
-<a href="user-area.php">Ver usuários</a>
+<a href="user_area.php">Ver usuários</a>
 
 <script>
 
