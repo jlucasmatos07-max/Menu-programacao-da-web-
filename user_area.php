@@ -101,11 +101,11 @@ function listarUsuarios(){
 
                 <td>
 
-                    <button onclick="editarUsuario(${i})">
+                    <button onclick="editarUsuario(${btn-editar})">
                         Editar
                     </button>
 
-                    <button onclick="excluirUsuario(${i})">
+                    <button onclick="excluirUsuario(${btn-excluir})">
                         Excluir
                     </button>
 
