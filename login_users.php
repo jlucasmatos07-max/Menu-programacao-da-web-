@@ -91,9 +91,9 @@ function cadastrarUsuario(){
     }
 
     const novoUsuario = {nome: inputNome, email: inputEmail, senha: inputSenha, data: inputData};
-    let lista = JSON.parse(localStorage.getItem("bancoUsuarios")) || [];
-    lista.push(novoUsuario);
-    localStorage.setItem("bancoUsuarios", JSON.stringify(lista));
+    let listaUsuarios = JSON.parse(localStorage.getItem("bancoUsuarios")) || [];
+    listaUsuarios.push(novoUsuario);
+    localStorage.setItem("bancoUsuarios", JSON.stringify(listaUsuarios));
 
     alert("Usuário cadastrado com sucesso!");
 }
