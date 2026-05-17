@@ -74,7 +74,7 @@
 
 <script>
 
-document.getElementById("cadastroForm").addEventListener("submit", function(event) {
+document.getElementById("user_area.php").addEventListener("submit", function(event) {
     event.preventDefault(); // Impede o envio do formulário
 
     let bancoUsusarios = JSON.parse(localStorage.getItem("bancoUsuarios")) || [];
@@ -84,7 +84,7 @@ document.getElementById("cadastroForm").addEventListener("submit", function(even
         data: document.getElementById("data").value,
         email: document.getElementById("email").value,
         senha: document.getElementById("senha").value,
-        nivel: document.getElementById("nivel").value
+        //nivel: document.getElementById("nivel").value
     };
 
     bancoUsuarios.push(novoUsuario);

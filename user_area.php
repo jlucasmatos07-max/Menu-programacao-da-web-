@@ -35,8 +35,8 @@
                 <tbody>
                     <tr>
                         <td>01</td>
-                        <td>lucas matos</td>
-                        <td>lucasmatos2727@example.com</td>
+                        <td>lucas</td>
+                        <td>lucas@example.com</td>
                         <td>administrador</td>
                         <td><span class= "badge ativo">ativo</span></td>
                         <td> <a href= "#" class= "btn-acao btn-editar">
@@ -47,8 +47,8 @@
                     </tr>
                     <tr>
                         <td>02</td>
-                        <td>kwjgrhfjkm,se</td>
-                        <td>kwjgrhfjkm,se@example.com</td>
+                        <td>hyan</td>
+                        <td>hyan@example.com</td>
                         <td>editor</td>
                         <td><span class= "badge ativo">ativo</span></td>
                         <td> <a href= "#" class= "btn-acao btn-editar">
@@ -62,8 +62,8 @@
                 <tbody>
                     <tr>
                         <td>03</td>
-                        <td>duda silva</td>
-                        <td>dudasilva2504@example.com</td>
+                        <td>duda</td>
+                        <td>duda@example.com</td>
                         <td>usúario</td>
                         <td><span class= "badge inativo">inativo</span></td>
                         <td> <a href= "#" class= "btn-acao btn-editar">
@@ -85,6 +85,7 @@
 
     bancoUsuarios.forEach(function(usuario) {
        
+    
     listaUsuarios.innerHTML += `
         <tr>
             <td>${usuario.nome}</td>
