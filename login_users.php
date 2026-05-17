@@ -13,68 +13,35 @@
     include 'sidebar.php';
     ?>
  <main>
-    <section class="card-form">
-        <div class="form-header">
-            <h2><i class="fa-solid fa-user-plus"></i> novo usuario </h2>
-            <p>preencha os dados abaixo para registrar um novo acesso</p>
+    <form id="cadastroForm">
+        <h2>Cadastro de usúario</h2>
+        <p>preencha os campos para criar um novo usúario</p>
+
+        <div>
+        <label for="nome">nome</label>
+        <input type="text" id="nome" placeholder="yasmin">
         </div>
 
-        <form action="user_area.php" method="POST">
-            <div class="form-group">
-                <label for="nome">nome completo</label>
-                <input type="text" id="nome" name="nome" placeholder="ex: yasmin" required>
-            </div>
+        <div>
+        <label for="data">data de nascimento</label>
+        <input type="date" id="data" placeholder="data de nascimento">
+        </div>
 
-            <div class="form-group">
-                <label for="data">data de nascimento</label>
-                <input type="date" id="data" name="data" placeholder="dd/mm/yyyy" required>
+        <div>
+        <label for="email">email</label>
+        <input type="email" id="email" placeholder="email">
+        </div>
 
-                </div>
+        <div>
+        <label for="senha">senha</label>
+        <input type="password" id="senha" placeholder="senha">
 
-            <div class="form-group">
-                <label for="email">email</label>
-                <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group flex-1">
-                    <label for="senha">senha</label>
-                    <input type="password" id="senha" name="senha" required>          
-                 </div>
-                 <div class="form-group flex-1">
-                    <label for="nivel">nivel</label>
-                    <select id="nivel" name="nivel">
-                        <option value="1">usuario</option>
-                        <option value="2">administrador</option>
-                    </select>
-
-                    <?php 
-                    $nivelAcesso =2;
-                    if ($nivelAcesso == 2) {
-                        echo '<span class="badge ativo">administrador</span>';
-
-                    } else {
-                        echo '<span class="badge inativo">usuario</span>';
-                    }
-                    ?>
-                 </div>
-            </div>
-            <div class="form-actions">
-                <button type="submit" class="btn-save">finalizar cadastro</button>
-                <a href="index.php" class="btn-cancel">cancelar</a>
-            </div>
-        </form>
-    </section>
-    </main>
-    </div>
-<button onclick="cadastrar()">Salvar</button>
-
-<br><br>
-<a href="user_area.php">Ver usuários</a>
-
+        <button type="submit">cadastrar</button>
+        </div>
+    </form>
 <script>
 
-document.getElementById("form-group").addEventListener("submit", function(event) {
+document.getElementById("cadastroForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Impede o envio do formulário
 
     let bancoUsusarios = JSON.parse(localStorage.getItem("bancoUsuarios")) || [];
