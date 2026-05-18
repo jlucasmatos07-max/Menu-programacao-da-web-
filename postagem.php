@@ -15,14 +15,14 @@
     <div class="dashboard-container">
         <nav>
             <ul>
-                <li><a href="index.php">Inicio</a></li>
-                <li><a href="categorias.php">Categorias</a></li>
-                <li><a href="postagem.php">Postagem</a></li>
-                <li><a href="usuario.php">Usuario</a></li>
+                <li><a href="index.php">home</a></li>
+                <li><a href="categorias.php">categorias</a></li>
+                <li><a href="postagem.php">postagem</a></li>
+                <li><a href="usuario.php">usuario</a></li>
             </ul>
             <div class="perfil-usuario">
-                <img src="https://ui-avatars.com/api/?name=V&background=008080&color=qwe" alt="Avatar">
-                <span>Valverde</span>
+                <img src="https://ui-avatars.com/api/?name=L&background=008080&color=qwe" alt="Avatar">
+                <span>Lucas</span>
             </div>
         </nav>
         <main>
