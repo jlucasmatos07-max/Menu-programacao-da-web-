@@ -117,7 +117,7 @@ footer {
     margin-top: auto;
     display: inline-block;
     text-align: center;
-    background-color: #004a8d;
+    background-color: #555555;
     color: white;
     padding: 10px;
     text-decoration: none;
@@ -126,7 +126,7 @@ footer {
 }
 
 .btn:hover {
-    background-color: #0666cc;
+    background-color: #333333;
 }
 
 .btn-add{

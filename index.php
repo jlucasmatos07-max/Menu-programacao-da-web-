@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>bloodlvrz</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -34,9 +34,9 @@
                 </article>
 
                 <article>
-                    <h2>Relatórios de vendas</h2>
+                    <h2>Status de desempenho</h2>
                     <p>Acompanhar os gráficos de desempenho deste mês.</p>
-                    <a href="relatorios.html" class="btn">Acessar</a>
+                    <a href="#" class="btn">Acessar</a>
                 </article>
 
                 <article>
