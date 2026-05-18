@@ -31,7 +31,7 @@
 
 label {
     font-weight: bold;
-    color: #2c3e50;
+    color: #300101;
     font-size: 14px ;
 }
 
@@ -49,7 +49,7 @@ input:focus {
 }
 
 .btn-save {
-    background-color: black;
+    background-color: #300101;
     color: white;
     border: none;
     padding: 12px 25px;
@@ -100,12 +100,12 @@ a {
 
 .login-header .logo-icon {
     font-size: 50px;
-    color: #004a8d;
+    color: #300101;
     margin-bottom: 10px;
 }
 
 .login-header h2 {
-    color: #2c3e50;
+    color: #300101;
     font-size: 24px;
     margin: 0;
 }
@@ -120,7 +120,7 @@ a {
 }
 
 .btn-login {
-    background-color: #004a8d;
+    background-color: #300101;
     color: white;
     width: 100%;
     padding: 12px;
@@ -134,7 +134,7 @@ a {
 }
 
 .btn-login:hover {
-    background-color: #003a70;
+    background-color: #300101;
 }
 
 .erro-alert {
