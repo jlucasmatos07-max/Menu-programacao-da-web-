@@ -11,7 +11,7 @@ table {
 }
 
 th {
-    background-color: #300101;
+    background-color: #b8b239;
     color: #ffffff;
     padding: 15px;
     text-align: left;
@@ -37,7 +37,7 @@ tbody tr:hover{
 .btn-icon {
     background: none;
     border: none;
-    color: #300101;
+    color: #dc620b;
     cursor: pointer;
     font-size: 16px;
 }
